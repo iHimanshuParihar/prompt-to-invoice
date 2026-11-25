@@ -1,0 +1,510 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": "Jane Doe",
+      "email": "jane@aurastudio.com",
+      "passwordHash": "password123",
+      "avatarUrl": "",
+      "role": "owner",
+      "defaultCurrency": "USD",
+      "createdAt": "2026-08-01T08:00:00Z",
+      "updatedAt": "2026-08-01T08:00:00Z"
+    },
+    {
+      "id": "user-2",
+      "name": "Marcus Lindberg",
+      "email": "marcus@nordicdigital.io",
+      "passwordHash": "password123",
+      "avatarUrl": "",
+      "role": "owner",
+      "defaultCurrency": "EUR",
+      "createdAt": "2026-08-10T09:00:00Z",
+      "updatedAt": "2026-08-10T09:00:00Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "0e9f9deb-e289-4830-a9fa-501226132033",
+      "userId": "user-1",
+      "expiresAt": "2026-12-01T16:09:33.214Z",
+      "createdAt": "2026-11-24T16:09:33.214Z",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36"
+    },
+    {
+      "id": "378cde34-5546-4191-b85f-c5f41176e2c0",
+      "userId": "user-2",
+      "expiresAt": "2026-12-02T06:31:23.517Z",
+      "createdAt": "2026-11-25T06:31:23.517Z",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "prof-us-1",
+      "userId": "user-1",
+      "name": "Aura Studio & Advisory LLC",
+      "legalName": "Aura Studio & Advisory LLC",
+      "email": "billing@aurastudio.com",
+      "phone": "+1 (415) 890-3321",
+      "website": "https://aurastudio.com",
+      "address": "742 Evergreen Terrace, Suite 300",
+      "city": "San Francisco, CA",
+      "country": "United States",
+      "postalCode": "94107",
+      "taxNumber": "EIN: 84-2918274",
+      "bankDetails": {
+        "bankName": "Silicon Valley Bank (First Citizens)",
+        "accountNumber": "****9481",
+        "routingNumber": "121000358"
+      },
+      "currency": "USD",
+      "defaultPaymentTermsDays": 30,
+      "isDefault": true,
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-08-01T09:00:00Z"
+    },
+    {
+      "id": "prof-eu-2",
+      "userId": "user-2",
+      "name": "Nordic Digital Solutions Oy",
+      "legalName": "Nordic Digital Solutions Oy",
+      "email": "invoicing@nordicdigital.io",
+      "phone": "+358 9 2314 5500",
+      "website": "https://nordicdigital.io",
+      "address": "Mannerheimintie 14 B, 4th Floor",
+      "city": "Helsinki",
+      "country": "Finland",
+      "postalCode": "00100",
+      "taxNumber": "VAT ID: FI29381726",
+      "bankDetails": {
+        "bankName": "Nordea Bank Abp",
+        "iban": "FI49 1234 5678 9012 34",
+        "bic": "NDEAFIS2"
+      },
+      "currency": "EUR",
+      "defaultPaymentTermsDays": 14,
+      "isDefault": true,
+      "createdAt": "2026-08-15T11:00:00Z",
+      "updatedAt": "2026-08-15T11:00:00Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "cli-1",
+      "userId": "user-1",
+      "name": "Sarah Jenkins",
+      "companyName": "Acme Corporation",
+      "email": "s.jenkins@acmecorp.com",
+      "phone": "+1 (212) 555-0199",
+      "address": "100 Broadway, 18th Floor",
+      "city": "New York, NY",
+      "country": "United States",
+      "taxNumber": "US-9382103",
+      "currency": "USD",
+      "notes": "Key partner for product design & brand identity sprints.",
+      "totalBilled": 11200,
+      "outstandingBalance": 3600,
+      "createdAt": "2026-08-05T10:00:00Z",
+      "updatedAt": "2026-10-10T14:30:00Z"
+    },
+    {
+      "id": "cli-4",
+      "userId": "user-1",
+      "name": "Dr. Arthur Pendelton",
+      "companyName": "BioHealth Dynamics",
+      "email": "arthur.p@biohealthdyn.com",
+      "phone": "+1 (617) 555-8392",
+      "address": "400 Technology Square",
+      "city": "Cambridge, MA",
+      "country": "United States",
+      "currency": "USD",
+      "notes": "Healthtech UX research and HIPAA compliance review.",
+      "totalBilled": 7500,
+      "outstandingBalance": 7500,
+      "createdAt": "2026-09-20T10:00:00Z",
+      "updatedAt": "2026-10-20T11:00:00Z"
+    },
+    {
+      "id": "cli-2",
+      "userId": "user-2",
+      "name": "Marcus Lindberg",
+      "companyName": "Hooli Cloud EU",
+      "email": "m.lindberg@hoolicloud.eu",
+      "phone": "+49 30 8392 110",
+      "address": "Friedrichstraße 68",
+      "city": "Berlin",
+      "country": "Germany",
+      "taxNumber": "DE389102931",
+      "currency": "EUR",
+      "notes": "Enterprise cloud migration and architecture consulting.",
+      "totalBilled": 21965,
+      "outstandingBalance": 0,
+      "createdAt": "2026-08-12T12:00:00Z",
+      "updatedAt": "2026-10-15T09:00:00Z"
+    },
+    {
+      "id": "cli-3",
+      "userId": "user-2",
+      "name": "Elena Rostova",
+      "companyName": "Vanguard Media Group",
+      "email": "e.rostova@vanguardmedia.co.uk",
+      "phone": "+44 20 7946 0912",
+      "address": "25 Cannon Street",
+      "city": "London",
+      "country": "United Kingdom",
+      "taxNumber": "GB98234120",
+      "currency": "GBP",
+      "notes": "Quarterly digital marketing strategy & creative direction.",
+      "totalBilled": 4200,
+      "outstandingBalance": 4200,
+      "createdAt": "2026-09-01T15:00:00Z",
+      "updatedAt": "2026-10-18T16:00:00Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv-101",
+      "userId": "user-1",
+      "invoiceNumber": "INV-2026-001",
+      "profileId": "prof-us-1",
+      "clientId": "cli-1",
+      "clientName": "Acme Corporation",
+      "clientEmail": "s.jenkins@acmecorp.com",
+      "clientAddress": "100 Broadway, 18th Floor, New York, NY, United States",
+      "clientTaxNumber": "US-9382103",
+      "issueDate": "2026-09-01",
+      "dueDate": "2026-09-30",
+      "currency": "USD",
+      "items": [
+        {
+          "id": "item-1",
+          "description": "Design System & UI Kit Component Architecture (40 hrs)",
+          "quantity": 40,
+          "unitPrice": 140,
+          "taxRate": 0,
+          "total": 5600
+        },
+        {
+          "id": "item-2",
+          "description": "Brand Guidelines & Typography Specification",
+          "quantity": 1,
+          "unitPrice": 2000,
+          "taxRate": 0,
+          "total": 2000
+        }
+      ],
+      "subtotal": 7600,
+      "taxTotal": 0,
+      "discountPercentage": 0,
+      "discountAmount": 0,
+      "total": 7600,
+      "amountPaid": 7600,
+      "balanceDue": 0,
+      "status": "paid",
+      "notes": "Thank you for your business. Payment received with thanks.",
+      "paymentTerms": "Net 30. Wire transfer or ACH.",
+      "paidAt": "2026-09-25T14:20:00Z",
+      "sentAt": "2026-09-01T10:00:00Z",
+      "payments": [
+        {
+          "id": "pay-1",
+          "amount": 7600,
+          "date": "2026-09-25",
+          "method": "wire",
+          "note": "Full wire settlement ref #SVB-9921"
+        }
+      ],
+      "createdAt": "2026-09-01T10:00:00Z",
+      "updatedAt": "2026-09-25T14:20:00Z"
+    },
+    {
+      "id": "inv-103",
+      "userId": "user-1",
+      "invoiceNumber": "INV-2026-003",
+      "profileId": "prof-us-1",
+      "clientId": "cli-1",
+      "clientName": "Acme Corporation",
+      "clientEmail": "s.jenkins@acmecorp.com",
+      "clientAddress": "100 Broadway, 18th Floor, New York, NY, United States",
+      "clientTaxNumber": "US-9382103",
+      "issueDate": "2026-10-01",
+      "dueDate": "2026-10-31",
+      "currency": "USD",
+      "items": [
+        {
+          "id": "item-5",
+          "description": "Sprint 14 React Web App Frontend Implementation (25 hrs @ $120)",
+          "quantity": 25,
+          "unitPrice": 120,
+          "taxRate": 0,
+          "total": 3000
+        },
+        {
+          "id": "item-6",
+          "description": "Performance Optimization & Lighthouse Audit",
+          "quantity": 1,
+          "unitPrice": 600,
+          "taxRate": 0,
+          "total": 600
+        }
+      ],
+      "subtotal": 3600,
+      "taxTotal": 0,
+      "discountPercentage": 0,
+      "discountAmount": 0,
+      "total": 3600,
+      "amountPaid": 0,
+      "balanceDue": 3600,
+      "status": "sent",
+      "notes": "AI prompt generated: \"25 hours frontend implementation for Acme Corp at $120/hr plus $600 audit\".",
+      "paymentTerms": "Due in 30 days. Remit to Silicon Valley Bank.",
+      "aiPromptOrigin": "25 hours frontend implementation for Acme Corp at $120/hr plus $600 audit",
+      "sentAt": "2026-10-01T15:00:00Z",
+      "payments": [],
+      "createdAt": "2026-10-01T14:45:00Z",
+      "updatedAt": "2026-10-01T15:00:00Z"
+    },
+    {
+      "id": "inv-106",
+      "userId": "user-1",
+      "invoiceNumber": "INV-2026-006",
+      "profileId": "prof-us-1",
+      "clientId": "cli-4",
+      "clientName": "BioHealth Dynamics",
+      "clientEmail": "arthur.p@biohealthdyn.com",
+      "clientAddress": "400 Technology Square, Cambridge, MA, United States",
+      "issueDate": "2026-10-18",
+      "dueDate": "2026-11-17",
+      "currency": "USD",
+      "items": [
+        {
+          "id": "item-10",
+          "description": "Healthcare Provider Portal UX Redesign (50 hrs @ $150)",
+          "quantity": 50,
+          "unitPrice": 150,
+          "taxRate": 0,
+          "total": 7500
+        }
+      ],
+      "subtotal": 7500,
+      "taxTotal": 0,
+      "discountPercentage": 0,
+      "discountAmount": 0,
+      "total": 7500,
+      "amountPaid": 0,
+      "balanceDue": 7500,
+      "status": "sent",
+      "notes": "First milestone of Q4 master services agreement.",
+      "paymentTerms": "Net 30 days.",
+      "aiPromptOrigin": "50 hours UX redesign for BioHealth Dynamics at $150/hr, net 30",
+      "sentAt": "2026-10-18T16:00:00Z",
+      "payments": [],
+      "createdAt": "2026-10-18T15:30:00Z",
+      "updatedAt": "2026-10-18T16:00:00Z"
+    },
+    {
+      "id": "inv-102",
+      "userId": "user-2",
+      "invoiceNumber": "INV-2026-002",
+      "profileId": "prof-eu-2",
+      "clientId": "cli-2",
+      "clientName": "Hooli Cloud EU",
+      "clientEmail": "m.lindberg@hoolicloud.eu",
+      "clientAddress": "Friedrichstraße 68, Berlin, Germany",
+      "clientTaxNumber": "DE389102931",
+      "issueDate": "2026-09-15",
+      "dueDate": "2026-09-29",
+      "currency": "EUR",
+      "items": [
+        {
+          "id": "item-3",
+          "description": "Cloud Infrastructure Kubernetes Architecture & Security Hardening",
+          "quantity": 60,
+          "unitPrice": 150,
+          "taxRate": 20,
+          "total": 9000
+        },
+        {
+          "id": "item-4",
+          "description": "Site Reliability Engineering Retainer - September",
+          "quantity": 1,
+          "unitPrice": 2500,
+          "taxRate": 20,
+          "total": 2500
+        }
+      ],
+      "subtotal": 11500,
+      "taxTotal": 2300,
+      "discountPercentage": 0,
+      "discountAmount": 0,
+      "total": 13800,
+      "amountPaid": 13800,
+      "balanceDue": 0,
+      "status": "paid",
+      "notes": "Reverse charge applicable for cross-border EU B2B services.",
+      "paymentTerms": "Net 14 days to Nordea IBAN.",
+      "paidAt": "2026-09-28T10:15:00Z",
+      "sentAt": "2026-09-15T11:00:00Z",
+      "payments": [
+        {
+          "id": "pay-2",
+          "amount": 13800,
+          "date": "2026-09-28",
+          "method": "wire",
+          "note": "SEPA B2B transfer ref DE-98210"
+        }
+      ],
+      "createdAt": "2026-09-15T11:00:00Z",
+      "updatedAt": "2026-09-28T10:15:00Z"
+    },
+    {
+      "id": "inv-104",
+      "userId": "user-2",
+      "invoiceNumber": "INV-2026-004",
+      "profileId": "prof-eu-2",
+      "clientId": "cli-2",
+      "clientName": "Hooli Cloud EU",
+      "clientEmail": "m.lindberg@hoolicloud.eu",
+      "clientAddress": "Friedrichstraße 68, Berlin, Germany",
+      "clientTaxNumber": "DE389102931",
+      "issueDate": "2026-10-10",
+      "dueDate": "2026-10-24",
+      "currency": "EUR",
+      "items": [
+        {
+          "id": "item-7",
+          "description": "Microservices Observability & Datadog Dashboard Configuration",
+          "quantity": 35,
+          "unitPrice": 160,
+          "taxRate": 20,
+          "total": 5600
+        },
+        {
+          "id": "item-8",
+          "description": "On-call Incident Response Support Training",
+          "quantity": 1,
+          "unitPrice": 1500,
+          "taxRate": 20,
+          "total": 1500
+        }
+      ],
+      "subtotal": 7100,
+      "taxTotal": 1420,
+      "discountPercentage": 5,
+      "discountAmount": 355,
+      "total": 8165,
+      "amountPaid": 8165,
+      "balanceDue": 0,
+      "status": "paid",
+      "notes": "Early payment 5% partner discount included.",
+      "paymentTerms": "Net 14 days.",
+      "paidAt": "2026-10-18T11:30:00Z",
+      "sentAt": "2026-10-10T09:30:00Z",
+      "payments": [
+        {
+          "id": "pay-3",
+          "amount": 8165,
+          "date": "2026-10-18",
+          "method": "stripe",
+          "note": "Stripe Instant Bank Transfer"
+        }
+      ],
+      "createdAt": "2026-10-10T09:30:00Z",
+      "updatedAt": "2026-10-18T11:30:00Z"
+    },
+    {
+      "id": "inv-105",
+      "userId": "user-2",
+      "invoiceNumber": "INV-2026-005",
+      "profileId": "prof-eu-2",
+      "clientId": "cli-3",
+      "clientName": "Vanguard Media Group",
+      "clientEmail": "e.rostova@vanguardmedia.co.uk",
+      "clientAddress": "25 Cannon Street, London, United Kingdom",
+      "clientTaxNumber": "GB98234120",
+      "issueDate": "2026-09-10",
+      "dueDate": "2026-10-10",
+      "currency": "GBP",
+      "items": [
+        {
+          "id": "item-9",
+          "description": "Brand Repositioning & Market Research Study (London Q3)",
+          "quantity": 1,
+          "unitPrice": 4200,
+          "taxRate": 0,
+          "total": 4200
+        }
+      ],
+      "subtotal": 4200,
+      "taxTotal": 0,
+      "discountPercentage": 0,
+      "discountAmount": 0,
+      "total": 4200,
+      "amountPaid": 0,
+      "balanceDue": 4200,
+      "status": "overdue",
+      "notes": "Payment reminder dispatched.",
+      "paymentTerms": "Net 30.",
+      "sentAt": "2026-09-10T12:00:00Z",
+      "payments": [],
+      "createdAt": "2026-09-10T11:45:00Z",
+      "updatedAt": "2026-10-15T08:00:00Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "userId": "user-1",
+      "tier": "professional",
+      "tierName": "Professional",
+      "priceMonthly": 15,
+      "billingInterval": "monthly",
+      "invoicesLimit": null,
+      "profilesLimit": 3,
+      "features": [
+        "Unlimited Invoices",
+        "Generative AI Invoice Parsing",
+        "Branded Multi-Currency Invoices (USD/EUR)",
+        "Dashboard Analytics & Revenue Graphs"
+      ],
+      "invoicesUsedThisMonth": 3,
+      "activeProfilesCount": 1,
+      "renewalDate": "2026-12-01"
+    },
+    {
+      "userId": "user-2",
+      "tier": "starter",
+      "tierName": "Starter",
+      "priceMonthly": 0,
+      "billingInterval": "monthly",
+      "invoicesLimit": 5,
+      "profilesLimit": 1,
+      "features": [
+        "Up to 5 invoices/month",
+        "1 business profile",
+        "USD & EUR support"
+      ],
+      "invoicesUsedThisMonth": 3,
+      "activeProfilesCount": 1,
+      "renewalDate": "2026-12-01"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "userId": "user-1",
+      "type": "invoice_ai_generated",
+      "title": "AI Drafted Invoice INV-2026-006",
+      "description": "Generated 50 hrs UX redesign for BioHealth Dynamics from natural prompt.",
+      "timestamp": "2026-10-18T15:30:00Z"
+    },
+    {
+      "id": "act-2",
+      "userId": "user-2",
+      "type": "payment_received",
+      "title": "Payment Received €8,165.00",
+      "description": "Hooli Cloud EU settled invoice INV-2026-004 via Stripe.",
+      "timestamp": "2026-10-18T11:30:00Z"
+    }
+  ]
+}
